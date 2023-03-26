@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megazetka</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-color: #14171a;
+            color:#ddd;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        .wrapper{
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .header{
+            padding: 10px 0px 0px 0px;
+            margin: 0px 0px 15px 0px;
+        }
+        .main{
+            flex:1 0 100%;
+        }
+        .main__row>*:not(:last-child){
+            margin: 0px 0px 25px 0px;
+        }
+        .container{
+                max-width:992px;
+                padding: 0px 10px;
+                margin: 0px auto;
+            }
+        .header__row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap:10px;
+            
+        }
+        .rozetka-header{
+            display: flex;
+            align-items: center;
+            gap:10px;
+        }
+        .header__partnership{
+            max-width: 100px;
+        }
+        .header__partnership img{
+            max-width: 100%;
+        }
+        .list-main{
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+        }
+        .footer{
+            background-color: #0E0F11;
+            margin: 20px 0px 0px 0px;
+        }
+        .footer__row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 80px;
+            gap:10px;
+            padding: 5px 0px;
+           
+        }
+        .imgClass{
+            max-width: 40px;
+        }
+        .imgClass img{
+            max-width: 100%;
+        }
+        .main__subtitle{
+            text-align: center;
+            font-size: 25px;
+            color:#fff;
+        }
+        .main__subtitle:not(:last-child){
+            margin: 0px 0px 30px 0px;
+        }
+        .list-main__link{
+            color:#fff;
+            text-transform: capitalize;
+            transition: color 0.2s;
+        }
+        .list-main__link:hover{
+            color: #ACACAC;
+            text-decoration: underline;
+        }
+        .colorText{
+            color:#00C20A;
+        }
+        .subtitle{
+            text-transform: uppercase;
+            color:#fff;
+        }
+        .imgClassMega{
+            max-width: 50px;
+        }
+        .imgClassMega img{
+            max-width: 100%;
+        }
+        .footer__author{
+            color:#fff;
+        }
+       @media(max-width:767.98px) {
+        .header__partnership{
+            display: none;
+        }
+        .header__megazetka{
+            display: none;
+        }
+        .list-main{
+            flex-wrap: wrap;
+            gap:10px;
+        }
+        .footer__row{
+            flex-direction: column;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__rozetka rozetka-header">
+                        <div class="rozetka-header__img imgClassMega">
+                        <img src="./logo2.svg" alt="rozetka">
+                        </div>
+                        <h2 class="header__subtitle subtitle">megazetka</h2>
+                    </div>
+                    <div class="header__partnership">
+                        <img src="./logo.svg" alt="partnership">
+                    </div>
+                    <div class="header__megazetka rozetka-header">
+                        <h2 class="header__subtitle subtitle">rozetka</h2>
+                        <div class="megazetka-header__img imgClass">
+                            <img src="./rozetka.svg" alt="megazetka">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="main__row">
+            <p class="main__text">
+                I am thrilled to announce that I have partnered with Rozetka, one of the largest online marketplaces in Ukraine. This
+                partnership will enable me to expand my flower-selling business and reach a wider audience. With Rozetka's established
+                platform and large customer base, I am confident that my business will thrive and attract more customers. I look forward
+                to this new chapter of growth and success for my business.
+            </p>
+            <h2 class="main__subtitle">
+                Flowers you may want yo buy
+            </h2>
+            <div class="main__links">
+                <ul class="main__list list-main">
+                    <li class="list-main__item"><a href="https://rozetka.com.ua/ua/tsveti/c4629866/tegi-193826=dolgosvegaya-roza/" class="list-main__link" target="_blank">rose</a></li>
+                    <li class="list-main__item"><a href="https://rozetka.com.ua/ua/tsveti-iz-mila/c4640016/tsveti=tyulpan/" class="list-main__link" target="_blank">tulip</a></li>
+                    <li class="list-main__item"><a href="https://rozetka.com.ua/ua/orhidei/c4642616/" class="list-main__link" target="_blank">orchids</a></li>
+                    <li class="list-main__item"><a href="https://rozetka.com.ua/ua/semena-odnoletnih-tsvetov/c4655811/58082=163792/" class="list-main__link" target="_blank">marigold</a></li>
+                    <li class="list-main__item"><a href="https://rozetka.com.ua/ua/klubni-i-lukovicy/c4628530/vid-231391=lukovitsi-liliy/" class="list-main__link" target="_blank">lilies</a></li>
+                    <li class="list-main__item"><a href="https://rozetka.com.ua/ua/semena-odnoletnih-tsvetov/c4655811/58082=163847/" class="list-main__link" target="_blank">dahlia</a></li>
+                    <li class="list-main__item"><a href="https://rozetka.com.ua/ua/semena-pryanyh-i-zelenyh-kultur/c2121127/57167=oduvanchik/" class="list-main__link" target="_blank">dandelion</a></li>
+                </ul>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="footer">
+    <div class="container">
+        <div class="footer__row">
+            <div class="footer__logo logo-footer rozetka-header">
+                    <div class="logo-footer__img  imgClassMega">
+                        <img src="./logo2.svg" alt="megazetka">
+                    </div>
+                    <h2 class="footer__subtitle subtitle">megazetka</h2>
+                </div>
+            <div class="footer__author">author: Maria Tu<span class="colorText">rych</span></div>
+        </div>
+    </div>
+        </div>
+    </div>    
+</body>
+</html>
